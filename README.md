@@ -11,8 +11,17 @@ RaspberrySapien
 
 ## RaspberryPi GPIO in C/C++
 
+- This project uses [rpi-hw](https://github.com/Wicker25/Rpi-hw)
+
+Another option that I have not experimented with:
+
 - Download the [bcm2835](http://www.open.com.au/mikem/bcm2835/) library
 - More details [here](http://www.raspberry-projects.com/pi/programming-in-c/compilers-and-ides/eclipse/eclipse-general-notes) and [here](http://www.raspberry-projects.com/pi/programming-in-c/c-libraries/bcm2835-by-mike-mccauley)
+
+[WiringPi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/) one is used by [Pi4J](http://pi4j.com/):
+ 
+- Support for Gertboard, soft-servo, PiFace, I2C, SPI, Serial and mroe
+- useful [diagrams](http://pi4j.com/usage.html)
 
 
 ## Connecting to Scratch
