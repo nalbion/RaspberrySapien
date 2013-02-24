@@ -204,11 +204,6 @@ void ScratchClient::receiveMessage( const char* message, int length ) {
 	const char* messageType = messageCopy;
 	cout << " << Received a '" << messageType << "' message" << endl; // with length: " << length;
 
-	//           1         2         3
-	// 0123456789012345678901234567890123456789
-	// 0000
-	// 0001T
-	// 0011burp loudly
 	char* messageParams;
 	if( i < length ) {
 		messageParams = messageCopy + i;
@@ -234,7 +229,7 @@ void ScratchClient::receiveMessage( const char* message, int length ) {
 		// messageParams = the string in the Scratch broadcast box
 		//char* broadcastName = strndup( messageParams + 1,  )
 		messageParams++;
-		messageParams[i-3] = '\0';
+		messageCopy[length-1] = '\0';
 		onBroadcastReceived( messageParams );
 	}
 

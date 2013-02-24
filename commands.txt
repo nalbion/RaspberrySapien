@@ -1,0 +1,73 @@
+rs_turnRight
+rs_rightArmUp
+rs_rightArmOut
+rs_tiltBodyRight
+rs_rightArmDown
+rs_rightArmIn
+rs_walkForward
+rs_walkBackward
+rs_turnLeft
+rs_leftArmUp
+rs_leftArmOut
+rs_tiltBodyLeft
+rs_leftArmDown
+rs_leftArmIn
+rs_stopMoving
+
+// Programming Commands (no shift)
+rs_masterCommandProgram 	// P
+rs_playProgram			// P>> (the one on the bottom)
+rs_quietPlayProgramWithSubroutines
+rs_rightSensorProgram 	// R>>
+rs_leftSensorProgram 	// L>>
+rs_sonicSensorProgram	// S>>
+
+// GREEN shift commands
+rs_rightTurnStep
+rs_rightHandThump
+rs_rightHandThrow
+rs_sleep
+rs_rightHandPickup
+rs_leanBackward
+rs_forwardStep
+rs_backwardStep
+rs_leftTurnStep
+rs_leftHandThump
+rs_leftHandThrow
+rs_listen
+rs_leftHandPickup
+rs_leanForward
+rs_reset
+rs_uhuhExecute	// (master command program execute)
+rs_quietExecute
+rs_wakeup
+rs_right		// (right sensor program execute)
+rs_left
+rs_sonic		// (sonic sensor program execute)
+
+// ORANGE shift commands
+rs_rightHandStrike3
+rs_rightHandSweep
+rs_burp
+rs_rightHandStrike2
+rs_highFive
+rs_rightHandStrike1
+rs_bulldozer
+rs_oops_fart
+rs_leftHandStrike3
+rs_leftHandSweep
+rs_whistle
+rs_leftHandStrike2
+rs_talkback
+rs_leftHandStrike1
+rs_roar
+rs_allDemo
+rs_powerOff
+rs_demo1	// (Karate skits)
+rs_demo2	// (Rude skits)
+rs_dance
+
+rs_feetShuffle
+rs_noOp
+rs_raiseArmThrow
+rs_karateChop

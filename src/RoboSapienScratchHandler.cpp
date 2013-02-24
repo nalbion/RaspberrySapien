@@ -13,79 +13,79 @@ using namespace std;
 
 
 RoboSapienScratchHandler::RoboSapienScratchHandler() {
-	commands.insert( CommandMapping("turnRight", RoboSapien::turnRight) );
-	commands.insert( CommandMapping("rightArmUp", RoboSapien::rightArmUp) );
-	commands.insert( CommandMapping("rightArmOut", RoboSapien::rightArmOut) );
-	commands.insert( CommandMapping("tiltBodyRight", RoboSapien::tiltBodyRight) );
-	commands.insert( CommandMapping("rightArmDown", RoboSapien::rightArmDown) );
-	commands.insert( CommandMapping("rightArmIn", RoboSapien::rightArmIn) );
-	commands.insert( CommandMapping("walkForward", RoboSapien::walkForward) );
-	commands.insert( CommandMapping("walkBackward", RoboSapien::walkBackward) );
-	commands.insert( CommandMapping("turnLeft", RoboSapien::turnLeft) );
-	commands.insert( CommandMapping("leftArmUp", RoboSapien::leftArmUp) );
-	commands.insert( CommandMapping("leftArmOut", RoboSapien::leftArmOut) );
-	commands.insert( CommandMapping("tiltBodyLeft", RoboSapien::tiltBodyLeft) );
-	commands.insert( CommandMapping("leftArmDown", RoboSapien::leftArmDown) );
-	commands.insert( CommandMapping("leftArmIn", RoboSapien::leftArmIn) );
-	commands.insert( CommandMapping("stopMoving", RoboSapien::stopMoving) );
+	commands.insert( CommandMapping("rs_turnRight", RoboSapien::turnRight) );
+	commands.insert( CommandMapping("rs_rightArmUp", RoboSapien::rightArmUp) );
+	commands.insert( CommandMapping("rs_rightArmOut", RoboSapien::rightArmOut) );
+	commands.insert( CommandMapping("rs_tiltBodyRight", RoboSapien::tiltBodyRight) );
+	commands.insert( CommandMapping("rs_rightArmDown", RoboSapien::rightArmDown) );
+	commands.insert( CommandMapping("rs_rightArmIn", RoboSapien::rightArmIn) );
+	commands.insert( CommandMapping("rs_walkForward", RoboSapien::walkForward) );
+	commands.insert( CommandMapping("rs_walkBackward", RoboSapien::walkBackward) );
+	commands.insert( CommandMapping("rs_turnLeft", RoboSapien::turnLeft) );
+	commands.insert( CommandMapping("rs_leftArmUp", RoboSapien::leftArmUp) );
+	commands.insert( CommandMapping("rs_leftArmOut", RoboSapien::leftArmOut) );
+	commands.insert( CommandMapping("rs_tiltBodyLeft", RoboSapien::tiltBodyLeft) );
+	commands.insert( CommandMapping("rs_leftArmDown", RoboSapien::leftArmDown) );
+	commands.insert( CommandMapping("rs_leftArmIn", RoboSapien::leftArmIn) );
+	commands.insert( CommandMapping("rs_stopMoving", RoboSapien::stopMoving) );
 
 	// Programming Commands (no shift)
-	commands.insert( CommandMapping("masterCommandProgram", RoboSapien::masterCommandProgram) ); 	// P
-	commands.insert( CommandMapping("playProgram", RoboSapien::playProgram) );			// P>> (the one on the bottom)
-	commands.insert( CommandMapping("quietPlayProgramWithSubroutines", RoboSapien::quietPlayProgramWithSubroutines) );
-	commands.insert( CommandMapping("rightSensorProgram", RoboSapien::rightSensorProgram) ); 	// R>>
-	commands.insert( CommandMapping("leftSensorProgram", RoboSapien::leftSensorProgram) ); 	// L>>
-	commands.insert( CommandMapping("sonicSensorProgram", RoboSapien::sonicSensorProgram) );	// S>>
+	commands.insert( CommandMapping("rs_masterCommandProgram", RoboSapien::masterCommandProgram) ); 	// P
+	commands.insert( CommandMapping("rs_playProgram", RoboSapien::playProgram) );			// P>> (the one on the bottom)
+	commands.insert( CommandMapping("rs_quietPlayProgramWithSubroutines", RoboSapien::quietPlayProgramWithSubroutines) );
+	commands.insert( CommandMapping("rs_rightSensorProgram", RoboSapien::rightSensorProgram) ); 	// R>>
+	commands.insert( CommandMapping("rs_leftSensorProgram", RoboSapien::leftSensorProgram) ); 	// L>>
+	commands.insert( CommandMapping("rs_sonicSensorProgram", RoboSapien::sonicSensorProgram) );	// S>>
 
 	// GREEN shift commands
-	commands.insert( CommandMapping("rightTurnStep", RoboSapien::rightTurnStep) );
-	commands.insert( CommandMapping("rightHandThump", RoboSapien::rightHandThump) );
-	commands.insert( CommandMapping("rightHandThrow", RoboSapien::rightHandThrow) );
-	commands.insert( CommandMapping("sleep", RoboSapien::sleep) );
-	commands.insert( CommandMapping("rightHandPickup", RoboSapien::rightHandPickup) );
-	commands.insert( CommandMapping("leanBackward", RoboSapien::leanBackward) );
-	commands.insert( CommandMapping("forwardStep", RoboSapien::forwardStep) );
-	commands.insert( CommandMapping("backwardStep", RoboSapien::backwardStep) );
-	commands.insert( CommandMapping("leftTurnStep", RoboSapien::leftTurnStep) );
-	commands.insert( CommandMapping("leftHandThump", RoboSapien::leftHandThump) );
-	commands.insert( CommandMapping("leftHandThrow", RoboSapien::leftHandThrow) );
-	commands.insert( CommandMapping("listen", RoboSapien::listen) );
-	commands.insert( CommandMapping("leftHandPickup", RoboSapien::leftHandPickup) );
-	commands.insert( CommandMapping("leanForward", RoboSapien::leanForward) );
-	commands.insert( CommandMapping("reset", RoboSapien::reset) );
-	commands.insert( CommandMapping("uhuhExecute", RoboSapien::uhuhExecute) );	// (master command program execute)
-	commands.insert( CommandMapping("quietExecute", RoboSapien::quietExecute) );
-	commands.insert( CommandMapping("wakeup", RoboSapien::wakeup) );
-	commands.insert( CommandMapping("right", RoboSapien::right) );		// (right sensor program execute)
-	commands.insert( CommandMapping("left", RoboSapien::left) );
-	commands.insert( CommandMapping("sonic", RoboSapien::sonic) );		// (sonic sensor program execute)
+	commands.insert( CommandMapping("rs_rightTurnStep", RoboSapien::rightTurnStep) );
+	commands.insert( CommandMapping("rs_rightHandThump", RoboSapien::rightHandThump) );
+	commands.insert( CommandMapping("rs_rightHandThrow", RoboSapien::rightHandThrow) );
+	commands.insert( CommandMapping("rs_sleep", RoboSapien::sleep) );
+	commands.insert( CommandMapping("rs_rightHandPickup", RoboSapien::rightHandPickup) );
+	commands.insert( CommandMapping("rs_leanBackward", RoboSapien::leanBackward) );
+	commands.insert( CommandMapping("rs_forwardStep", RoboSapien::forwardStep) );
+	commands.insert( CommandMapping("rs_backwardStep", RoboSapien::backwardStep) );
+	commands.insert( CommandMapping("rs_leftTurnStep", RoboSapien::leftTurnStep) );
+	commands.insert( CommandMapping("rs_leftHandThump", RoboSapien::leftHandThump) );
+	commands.insert( CommandMapping("rs_leftHandThrow", RoboSapien::leftHandThrow) );
+	commands.insert( CommandMapping("rs_listen", RoboSapien::listen) );
+	commands.insert( CommandMapping("rs_leftHandPickup", RoboSapien::leftHandPickup) );
+	commands.insert( CommandMapping("rs_leanForward", RoboSapien::leanForward) );
+	commands.insert( CommandMapping("rs_reset", RoboSapien::reset) );
+	commands.insert( CommandMapping("rs_uhuhExecute", RoboSapien::uhuhExecute) );	// (master command program execute)
+	commands.insert( CommandMapping("rs_quietExecute", RoboSapien::quietExecute) );
+	commands.insert( CommandMapping("rs_wakeup", RoboSapien::wakeup) );
+	commands.insert( CommandMapping("rs_right", RoboSapien::right) );		// (right sensor program execute)
+	commands.insert( CommandMapping("rs_left", RoboSapien::left) );
+	commands.insert( CommandMapping("rs_sonic", RoboSapien::sonic) );		// (sonic sensor program execute)
 
 	// ORANGE shift commands
-	commands.insert( CommandMapping("rightHandStrike3", RoboSapien::rightHandStrike3) );
-	commands.insert( CommandMapping("rightHandSweep", RoboSapien::rightHandSweep) );
-	commands.insert( CommandMapping("burp", RoboSapien::burp) );
-	commands.insert( CommandMapping("rightHandStrike2", RoboSapien::rightHandStrike2) );
-	commands.insert( CommandMapping("highFive", RoboSapien::highFive) );
-	commands.insert( CommandMapping("rightHandStrike1", RoboSapien::rightHandStrike1) );
-	commands.insert( CommandMapping("bulldozer", RoboSapien::bulldozer) );
-	commands.insert( CommandMapping("oops_fart", RoboSapien::oops_fart) );
-	commands.insert( CommandMapping("leftHandStrike3", RoboSapien::leftHandStrike3) );
-	commands.insert( CommandMapping("leftHandSweep", RoboSapien::leftHandSweep) );
-	commands.insert( CommandMapping("whistle", RoboSapien::whistle) );
-	commands.insert( CommandMapping("leftHandStrike2", RoboSapien::leftHandStrike2) );
-	commands.insert( CommandMapping("talkback", RoboSapien::talkback) );
-	commands.insert( CommandMapping("leftHandStrike1", RoboSapien::leftHandStrike1) );
-	commands.insert( CommandMapping("roar", RoboSapien::roar) );
-	commands.insert( CommandMapping("allDemo", RoboSapien::allDemo) );
-	commands.insert( CommandMapping("powerOff", RoboSapien::powerOff) );
-	commands.insert( CommandMapping("demo1", RoboSapien::demo1) );	// (Karate skits)
-	commands.insert( CommandMapping("demo2", RoboSapien::demo2) );	// (Rude skits)
-	commands.insert( CommandMapping("dance", RoboSapien::dance) );
+	commands.insert( CommandMapping("rs_rightHandStrike3", RoboSapien::rightHandStrike3) );
+	commands.insert( CommandMapping("rs_rightHandSweep", RoboSapien::rightHandSweep) );
+	commands.insert( CommandMapping("rs_burp", RoboSapien::burp) );
+	commands.insert( CommandMapping("rs_rightHandStrike2", RoboSapien::rightHandStrike2) );
+	commands.insert( CommandMapping("rs_highFive", RoboSapien::highFive) );
+	commands.insert( CommandMapping("rs_rightHandStrike1", RoboSapien::rightHandStrike1) );
+	commands.insert( CommandMapping("rs_bulldozer", RoboSapien::bulldozer) );
+	commands.insert( CommandMapping("rs_oops_fart", RoboSapien::oops_fart) );
+	commands.insert( CommandMapping("rs_leftHandStrike3", RoboSapien::leftHandStrike3) );
+	commands.insert( CommandMapping("rs_leftHandSweep", RoboSapien::leftHandSweep) );
+	commands.insert( CommandMapping("rs_whistle", RoboSapien::whistle) );
+	commands.insert( CommandMapping("rs_leftHandStrike2", RoboSapien::leftHandStrike2) );
+	commands.insert( CommandMapping("rs_talkback", RoboSapien::talkback) );
+	commands.insert( CommandMapping("rs_leftHandStrike1", RoboSapien::leftHandStrike1) );
+	commands.insert( CommandMapping("rs_roar", RoboSapien::roar) );
+	commands.insert( CommandMapping("rs_allDemo", RoboSapien::allDemo) );
+	commands.insert( CommandMapping("rs_powerOff", RoboSapien::powerOff) );
+	commands.insert( CommandMapping("rs_demo1", RoboSapien::demo1) );	// (Karate skits)
+	commands.insert( CommandMapping("rs_demo2", RoboSapien::demo2) );	// (Rude skits)
+	commands.insert( CommandMapping("rs_dance", RoboSapien::dance) );
 
-	commands.insert( CommandMapping("feetShuffle", RoboSapien::feetShuffle) );
-	commands.insert( CommandMapping("noOp", RoboSapien::noOp) );
-	commands.insert( CommandMapping("raiseArmThrow", RoboSapien::raiseArmThrow) );
-	commands.insert( CommandMapping("karateChop", RoboSapien::karateChop) );
+	commands.insert( CommandMapping("rs_feetShuffle", RoboSapien::feetShuffle) );
+	commands.insert( CommandMapping("rs_noOp", RoboSapien::noOp) );
+	commands.insert( CommandMapping("rs_raiseArmThrow", RoboSapien::raiseArmThrow) );
+	commands.insert( CommandMapping("rs_karateChop", RoboSapien::karateChop) );
 }
 
 RoboSapienScratchHandler::~RoboSapienScratchHandler() {
@@ -96,7 +96,8 @@ RoboSapienScratchHandler::~RoboSapienScratchHandler() {
 bool RoboSapienScratchHandler::isInterestedInBroadcast( const char* broadcastName ) {
 //	return commands.count( broadcastName ) != 0;
 	// TODO: check that broadcastName is in the commands map.
-	return true;
+//	return true;
+	return strncmp( "rs_", broadcastName, 3 ) == 0;
 }
 
 

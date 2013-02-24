@@ -11,6 +11,7 @@
 
 
 RoboSapien::RoboSapien() {
+	ir.init();
 }
 
 RoboSapien::~RoboSapien() {

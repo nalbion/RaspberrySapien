@@ -25,7 +25,8 @@ private:
 	void delayTs(unsigned int slices);
 
 private:
-	static const uint8_t IR_IN = 17;	// white wire from the head
+	static const uint8_t IR_IN = 11; //17;	// white wire from the head
+	// RpiPins.PIN13 = GPIO 27
 	static const uint8_t IR_OUT = 27;	// white wire to the body
 	rpihw::gpio io;
 

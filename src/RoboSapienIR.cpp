@@ -38,6 +38,7 @@ RoboSapienIR::~RoboSapienIR() {
 }
 
 void RoboSapienIR::init() {
+	cout << "Initialising IR pins" << endl;
 	rsBit = 9;    		// Total bits of data
 	rsEcho = true; 		// Should Arduino Echo RS commands
 	rsUsed = true; 		// Has the last command been used
@@ -49,8 +50,8 @@ void RoboSapienIR::init() {
 	io.setRisingEvent( IR_IN, true );	// readCommand
 
 	// Indicate that we have hacked into RoboSapien
-	io.setup( 22, gpio::OUTPUT );
-	io.write( 22, gpio::HIGH );
+//	io.setup( 22, gpio::OUTPUT );
+//	io.write( 22, gpio::HIGH );
 }
 
 void RoboSapienIR::writeCommand(unsigned char cmd) {
